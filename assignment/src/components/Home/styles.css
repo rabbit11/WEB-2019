@@ -1,2 +1,14 @@
 .app-wrapper {
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.contentTitle{
+    font-weight: bold;
+}
+
+#projectImage{
+    width:100%;
 }

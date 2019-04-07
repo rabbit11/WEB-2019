@@ -4,10 +4,14 @@ import { Button, Navbar, Nav, Jumbotron, Container, Row, Col } from "react-boots
 import styled from 'styled-components'
 import "./styles.css";
 
+// const Jumbotron = styled.Jumbotron`
+//   border: 1px solid red
+// `
+
 const Home = () => (
   <div className="app-wrapper">
     <div className="header">
-      <Navbar defaultActiveKey="/home" bg="light" expand="lg" fixed="top">
+      <Navbar defaultActiveKey="/home" fixed="top">
         <Container>
           <Navbar.Brand href="/home">IS</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,8 +37,24 @@ const Home = () => (
     <div>
       <Container>
         <Row>
-          <Col>1 of 2</Col>
-          <Col>2 of 2</Col>
+          <Col md={6}><img src="http://hackncs.com/img/project.png" id="projectImage"></img></Col>
+          <Col md={6} className="align-self-center">
+            <p class="contentTitle">Sobre este Projeto</p>
+            <p>Essa plataforma foi desenvolvida como um trabalho integrado, para as disciplinas
+              de Engenharia de Software 2 e Desenvolvimento Web. Durante o desenvolvimento deste trabalho, utilizamos todo nosso conhecimento adquirido
+            durante o semestre, deixando nosso lado criativo fluir para a construção de um site simples e 
+            atrativo.
+            </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6} className="align-self-center">
+          <p class="contentTitle">Nossa Equipe</p>
+          <p>Todos os integrantes do grupo fizeram parte de cada uma das atividades do projeto,
+            trabalhando ao máximo para que esse projeto fosse algo criado por nós, deixando a marca
+            de cada um, do seu jeito e construir algo que pudéssemos nos orgulhar.
+          </p></Col>
+          <Col md={6}><img src="http://hackncs.com/img/team.png"></img></Col>
         </Row>
       </Container>
     </div>
