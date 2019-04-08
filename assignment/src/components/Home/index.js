@@ -36,7 +36,7 @@ const Home = () => (
             Um simples site onde você pode encontrar todas as informações necessárias sobre um estrangeiro no país.
           </p>
           <p>
-          <Button href="#" variant="outline-light my-4" size="lg">Prosseguir</Button>
+          <Button href="#" variant="outline-primary my-4" size="lg">Prosseguir</Button>
           </p>
           <img src="" className="projectImage"></img>
           {/* <img variant="mt-5 mb-0" src="http://www.pngmart.com/files/4/Travel-PNG-Image.png"></img> */}
